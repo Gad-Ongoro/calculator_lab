@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 h-screen flex items-center justify-center text-gray-800 p-4">
+    <div class="max-w-md mx-auto p-6 rounded-md shadow-md">
+        <div class="grid grid-cols-4 gap-4 mb-4">
+            <input type="text" id="output"
+                class="col-span-4 bg-gray-100 p-2 text-right text-2xl font-bold rounded-md outline-none" readonly>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('7')">7</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('8')">8</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('9')">9</button>
+            <button class="col-span-1 bg-green-400 hover:bg-green-500 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('/')">/</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('4')">4</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('5')">5</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('6')">6</button>
+            <button class="col-span-1 bg-green-400 hover:bg-green-500 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('*')">*</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('1')">1</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('2')">2</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('3')">3</button>
+            <button class="col-span-1 bg-green-400 hover:bg-green-500 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('-')">-</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('0')">0</button>
+            <button class="col-span-1 bg-gray-300 hover:bg-gray-400 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('.')">.</button>
+            <button class="col-span-1 bg-green-400 hover:bg-green-500 p-2 text-lg font-semibold rounded-md"
+                onclick="clearOutput()">AC</button>
+            <button class="col-span-1 bg-green-400 hover:bg-green-500 p-2 text-lg font-semibold rounded-md"
+                onclick="appendToOutput('+')">+</button>
+            <button class="col-span-2 bg-green-400 hover:bg-green-500 p-2 text-lg font-semibold rounded-md"
+                onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
